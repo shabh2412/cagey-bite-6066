@@ -48,9 +48,15 @@ export const menuItems = [
 
 export const Navbar = () => {
 	return (
-		<Box bg={"white"} px="5" width={"100%"}>
+		<Box
+			bg={"white"}
+			px="5"
+			width={"100%"}
+			position="sticky"
+			top={0}
+			boxShadow="rgba(0, 0, 0, 0.08) 0px 4px 12px;">
 			<Flex
-				py="0"
+				py="3"
 				color={"black"}
 				alignItems="center"
 				flexWrap={"wrap"}

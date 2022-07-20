@@ -26,11 +26,11 @@ export const menuItems = [
 	},
 	{
 		title: "women",
-		path: "women",
+		path: "/women",
 	},
 	{
 		title: "kids",
-		path: "kids",
+		path: "/kids",
 	},
 	{
 		title: "home & living",

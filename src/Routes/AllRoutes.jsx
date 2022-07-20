@@ -8,7 +8,17 @@ export const AllRoutes = () => {
 			<Route path="/" element={<Home />} />
 			{/* <Route path="/men" element={<h1>Men</h1>} /> */}
 			{menuItems?.map(({ title, path }) => (
-				<Route path={path} element={<h1>{title}</h1>} />
+				<Route
+					path={path}
+					element={
+						<h1
+							style={{
+								color: "black",
+							}}>
+							{title}
+						</h1>
+					}
+				/>
 			))}
 		</Routes>
 	);

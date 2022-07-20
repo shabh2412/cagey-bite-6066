@@ -7,7 +7,7 @@ const style = {
 export const HeroBannerGrid = ({ image, link = "/" }) => {
 	return (
 		<ChLink href={link} style={style}>
-			<Image width="100%" height="400px" src={image} style={style} />
+			<Image width="100%" maxH="400px" src={image} style={style} />
 		</ChLink>
 	);
 };

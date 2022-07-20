@@ -58,8 +58,13 @@ export const menuItems = [
 
 export const Navbar = () => {
 	return (
-		<Box bg={"white"} px="5">
-			<Flex py="0" color={"black"} alignItems="center">
+		<Box bg={"white"} px="5" width={"100%"}>
+			<Flex
+				py="0"
+				color={"black"}
+				alignItems="center"
+				flexWrap={"wrap"}
+				boxSizing="border-box">
 				<ChLink as={NavLink} to="/">
 					<Image src={logo} maxW="100" />
 				</ChLink>

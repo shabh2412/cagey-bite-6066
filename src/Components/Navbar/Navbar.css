@@ -1,0 +1,23 @@
+.navbar-menu > * {
+	/* border: 1px solid black; */
+	/* padding: 2px; */
+	font-size: 14px;
+	font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+		Helvetica, Arial, sans-serif;
+	letter-spacing: 0.3px;
+	text-transform: uppercase;
+	border-bottom: 5px solid white;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.25s all ease-in;
+}
+
+.navbar-menu > *:hover {
+	border-bottom: 5px solid tomato;
+	transition: 0.25s all ease-in;
+	cursor: pointer;
+}
+
+/* .navbar-menu > div > .nav-menu-item {
+	color: "#282c3f" !important;
+} */

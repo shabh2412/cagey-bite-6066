@@ -13,11 +13,28 @@
 }
 
 .navbar-menu > *:hover {
-	border-bottom: 5px solid tomato;
+  border-bottom: 5px solid tomato;
 	transition: 0.25s all ease-in;
 	cursor: pointer;
+}
+.navbar-menu  a:hover {
+  text-decoration: none;
 }
 
 /* .navbar-menu > div > .nav-menu-item {
 	color: "#282c3f" !important;
 } */
+
+.iconLink {
+	margin-top: 0 !important;
+	font-size: 14px;
+	text-align: center;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+a.iconLink:hover {
+	text-decoration: none;
+  color: pink;
+}

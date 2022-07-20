@@ -1,14 +1,16 @@
 import { SearchIcon } from "@chakra-ui/icons";
 import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
 
+import "./SearchBar.css";
+
 export const SearchBar = ({ text }) => {
 	return (
-		<InputGroup border="1px solid tomato">
+		<InputGroup>
 			<InputLeftElement
 				pointerEvents="none"
 				children={<SearchIcon color="gray.500" />}
 			/>
-			<Input />
+			<Input placeholder={text} fontSize="14px" />
 		</InputGroup>
 	);
 };

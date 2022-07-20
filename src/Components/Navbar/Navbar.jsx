@@ -1,25 +1,15 @@
 import {
-	AspectRatio,
 	Box,
-	Container,
 	Flex,
-	Heading,
-	HStack,
 	Image,
 	Link as ChLink,
-	LinkBox,
-	LinkOverlay,
-	SimpleGrid,
 	Spacer,
 	Stack,
-	Text,
 	VStack,
 } from "@chakra-ui/react";
-import { AiOutlineUser } from "react-icons/ai";
 import { BsBag, BsHeart, BsPerson } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/Myntra_logo.png";
-import { IconLink } from "./LinkWithIcon/IconLink";
 import "./Navbar.css";
 import { NavMenuItem } from "./NavMenuItem/NavMenuItem";
 import { SearchBar } from "./SearchBar/SearchBar";
@@ -64,6 +54,7 @@ export const Navbar = () => {
 				color={"black"}
 				alignItems="center"
 				flexWrap={"wrap"}
+				gap="1em"
 				boxSizing="border-box">
 				<ChLink as={NavLink} to="/">
 					<Image src={logo} maxW="100" />

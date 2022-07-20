@@ -29,6 +29,33 @@ import { SearchBar } from "./SearchBar/SearchBar";
 // 	fontWeight: "500",
 // };
 
+export const menuItems = [
+	{
+		title: "Men",
+		path: "/men",
+	},
+	{
+		title: "women",
+		path: "women",
+	},
+	{
+		title: "kids",
+		path: "kids",
+	},
+	{
+		title: "home & living",
+		path: "home-living",
+	},
+	{
+		title: "beauty",
+		path: "beauty",
+	},
+	{
+		title: "studio",
+		path: "studio",
+	},
+];
+
 export const Navbar = () => {
 	return (
 		<Box bg={"white"} px="5">
@@ -44,12 +71,9 @@ export const Navbar = () => {
 					spacing="2"
 					// style={menuItemStyling}
 					className="navbar-menu">
-					<NavMenuItem path="/men">Men</NavMenuItem>
-					<NavMenuItem path="/women">women</NavMenuItem>
-					<NavMenuItem path="/kids">kids</NavMenuItem>
-					<NavMenuItem path="/home-living">home & living</NavMenuItem>
-					<NavMenuItem path="/beauty">beauty</NavMenuItem>
-					<NavMenuItem path="/studio">studio</NavMenuItem>
+					{menuItems?.map(({ title, path }) => (
+						<NavMenuItem path={path}>{title}</NavMenuItem>
+					))}
 				</Stack>
 				{/* <Box border="1px solid teal"></Box> */}
 				<Spacer />

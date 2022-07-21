@@ -74,7 +74,9 @@ export const Navbar = () => {
 					// style={menuItemStyling}
 					className="navbar-menu">
 					{menuItems?.map(({ title, path }) => (
-						<NavMenuItem path={path}>{title}</NavMenuItem>
+						<NavMenuItem key={title} path={path}>
+							{title}
+						</NavMenuItem>
 					))}
 				</Stack>
 				{/* <Box border="1px solid teal"></Box> */}

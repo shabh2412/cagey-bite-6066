@@ -24,8 +24,8 @@ export const Banner = ({ image, target = "/men" }) => {
 export const OffersBanner = ({ images = [] }) => {
 	return (
 		<Flex direction="row" justifyContent="space-evenly">
-			{images?.map((image) => (
-				<Banner image={image} />
+			{images?.map((image, index) => (
+				<Banner image={image} key={index} />
 			))}
 		</Flex>
 	);

@@ -46,6 +46,27 @@ export const Home = () => {
 		"https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/7/2d136799-abd8-438d-b10e-8e404dbdcd4f1657171615945-BudgetBuys_Perfumes_BodyMists.jpg",
 	];
 
+	const brandsEveryoneCrushingOn = [
+		[
+			"https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/12/f79950d2-9d48-46fe-858a-36f2d84551b41657611146547-Libas_HP-Top-Tile.jpg",
+			"https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/12/37ce5ba3-cba3-4c4e-b7c6-d1456506721a1657611146561-Vishudh_HP-Top-Tile.jpg",
+			"https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/11/756175fd-2561-49ce-8e36-ca62bfe2d2881657556366248-Nivea-Day-1-HP-Tile.jpg",
+			"https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/11/6b24b9e9-8e64-4481-8653-04d17060e7e21657527673741-3.jpeg",
+			"https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/12/6e52d41b-3889-4afb-8d35-6dd939d063f21657616626400-Tile.jpeg",
+			"https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/5/9976aa54-cc16-45d0-a7b9-408d292116211657015332849-fire-boult.jpg",
+			"https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/12/5d6f0824-3c6d-43ee-b480-03e5b7a351e61657604734083-image_jpeg370525122.jpg",
+		],
+		[
+			"https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/12/16f60f19-5db2-4e19-a98d-72173a5272301657611146554-Varanga_HP-Top-Tile.jpg",
+			"https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/12/afe60b31-14f8-4058-b4e0-7dd8c888242c1657615968224-3.jpeg",
+			"https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/12/a9824fc5-199e-40dd-95e4-a0c058db2bd11657604734099-image_jpeg1272700364.jpg",
+			"https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/13/7ac25c7e-de0a-47ce-a7b5-eb065ede28801657698930177-image_jpeg380683339.jpg",
+			"https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/11/b059115b-bc84-418b-9cf0-2c8958d8c45b1657521520339-Cortina.jpeg",
+			"https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/11/774aba37-8300-4ebe-8e02-1ab0ab5ab5111657521520345-Romee.jpeg",
+			"https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/5/9ae53025-9885-481f-b66a-e3c7f12a00ec1656992170965-H-M-tiles-1.jpg",
+		],
+	];
+
 	return (
 		<Box>
 			<HeroBanner left={left} right={right} center={center} />
@@ -66,7 +87,9 @@ export const Home = () => {
 				}
 			/>
 			<OffersBanner images={budgetBuys} />
+      {/* Brand everyone's crushing on. */}
 			<BigBanner src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/13/575196ba-5c16-485c-a04d-0295ca71c63c1657715178103-Brands-Everyone_s-Crushing-On-.jpg" />
+      
 		</Box>
 	);
 };

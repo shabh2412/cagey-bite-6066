@@ -21,11 +21,11 @@ export const Banner = ({ image, target = "/men" }) => {
 	);
 };
 
-export const OffersBanner = ({ images = [] }) => {
+export const OffersBanner = ({ images = [], target = "/men" }) => {
 	return (
 		<Flex direction="row" justifyContent="space-evenly">
 			{images?.map((image, index) => (
-				<Banner image={image} key={index} />
+				<Banner image={image} key={index} target={target} />
 			))}
 		</Flex>
 	);

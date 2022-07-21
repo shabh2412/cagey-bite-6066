@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { AdminForm } from "../Components/AdminForm/AdminForm";
 import { Home } from "../Components/Home/Home";
 import { menuItems } from "../Components/Navbar/Navbar";
 
@@ -21,6 +22,7 @@ export const AllRoutes = () => {
 					}
 				/>
 			))}
+			<Route path="/admin" element={<AdminForm />} />
 		</Routes>
 	);
 };

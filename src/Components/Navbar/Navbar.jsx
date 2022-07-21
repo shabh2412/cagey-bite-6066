@@ -53,6 +53,7 @@ export const Navbar = () => {
 			px="5"
 			width={"100%"}
 			position="sticky"
+			zIndex="1000"
 			top={0}
 			boxShadow="rgba(0, 0, 0, 0.08) 0px 4px 12px;">
 			<Flex

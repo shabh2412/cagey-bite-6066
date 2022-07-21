@@ -1,13 +1,4 @@
-import {
-	Box,
-	Container,
-	Flex,
-	HStack,
-	Image,
-	Spacer,
-	Text,
-	VStack,
-} from "@chakra-ui/react";
+import { Box, Container, HStack } from "@chakra-ui/react";
 import { FooterColumn } from "./FooterColumn";
 import { MyntraPromise } from "./MyntraPromise";
 
@@ -98,7 +89,7 @@ export const Footer = () => {
 	return (
 		<Box bg="#FAFBFC" py="8">
 			<Container maxW="80%">
-				<HStack alignItems="flex-start" gap="10">
+				<HStack alignItems="flex-start" gap="10" flexWrap="wrap">
 					{footerLinks?.map((column) => (
 						<>
 							{/* {console.log(footerLinks)} */}

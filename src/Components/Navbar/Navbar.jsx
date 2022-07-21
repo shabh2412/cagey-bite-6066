@@ -71,8 +71,9 @@ export const Navbar = () => {
 				{/* Menu Items */}
 				<Stack
 					direction={"row"}
-					spacing="2"
+					spacing="1"
 					// style={menuItemStyling}
+					flexWrap="wrap"
 					className="navbar-menu">
 					{menuItems?.map(({ title, path }) => (
 						<NavMenuItem key={title} path={path}>

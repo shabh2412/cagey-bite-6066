@@ -11,13 +11,14 @@ export const AllRoutes = () => {
 			{menuItems?.map(({ title, path }) => (
 				<Route
 					key={title}
-					path={path}
+					path={`shop/${path}`}
 					element={
 						<h1
 							style={{
 								color: "black",
 							}}>
 							{title}
+							{console.log(path)}
 						</h1>
 					}
 				/>

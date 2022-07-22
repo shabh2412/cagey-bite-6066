@@ -1,9 +1,10 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import { ProductCard } from "../Cards/ProductCard";
+import "../Cards/ProductCard.css";
 
 export const ProductsContainer = ({ products = [] }) => {
 	return (
-		<SimpleGrid minChildWidth="20%" spacing="1em">
+		<SimpleGrid spacing="1em" columns={[4]}>
 			{products?.map((product) => (
 				<ProductCard
 					image={product.images[0]}

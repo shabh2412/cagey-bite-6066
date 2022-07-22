@@ -1,6 +1,7 @@
 import { StarIcon } from "@chakra-ui/icons";
 import { Heading, Text } from "@chakra-ui/react";
 import { Card, CardImg } from "react-bootstrap";
+
 export const ProductCard = ({
 	image,
 	name,
@@ -15,8 +16,10 @@ export const ProductCard = ({
 			onClick={() => {
 				alert(`product clicked\n product id : ${id}`);
 			}}
-			style={{ width: "18rem" }}
-			className="rounded-0 border-0">
+			style={{
+				width: "80%",
+			}}
+			className="rounded-0 border-0 productCard">
 			<div
 				style={{
 					position: "relative",

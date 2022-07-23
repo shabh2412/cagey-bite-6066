@@ -11,6 +11,15 @@ import {
 } from "@chakra-ui/react";
 import { useEffect, useRef, useState } from "react";
 
+export const categories = [
+	"tshirt",
+	"jeans",
+	"jackets",
+	"innerwear",
+	"sportswear",
+	"formals",
+];
+
 const initData = {
 	name: "",
 	brand: "",
@@ -179,12 +188,9 @@ export const AdminForm = () => {
 						onChange={(e) => {
 							handleChange(e);
 						}}>
-						<option value="tshirt">Tshirt</option>
-						<option value="jeans">jeans</option>
-						<option value="jackets">jackets</option>
-						<option value="innerwear">innerwear</option>
-						<option value="sportswear">sportswear</option>
-						<option value="formals">formals</option>
+						{categories.map((category) => (
+							<option value={category}>{category}</option>
+						))}
 					</Select>
 				</FormControl>
 				{/* section */}

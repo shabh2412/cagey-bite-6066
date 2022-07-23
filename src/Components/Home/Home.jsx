@@ -160,7 +160,7 @@ export const Home = () => {
 				}
 			/> */}
 			<TextBanner title="deal of the day" />
-			<OffersBanner images={omgOffers} target="/women" />
+			<OffersBanner images={omgOffers} target="/shop/women" />
 			{/* <BigBanner
 				src={
 					"https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/13/b234ac64-8cf4-4231-ad62-db1bf5b958ed1657715178112-Budget-Buys.jpg"
@@ -172,7 +172,7 @@ export const Home = () => {
 			{/* <BigBanner src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/13/575196ba-5c16-485c-a04d-0295ca71c63c1657715178103-Brands-Everyone_s-Crushing-On-.jpg" /> */}
 			<TextBanner title="BEST OF MYNTRA EXCLUSIVE BRANDS" />
 			{brandsEveryoneCrushingOn?.map((item, index) => (
-				<OffersBanner images={item} key={index} target="/women" />
+				<OffersBanner images={item} key={index} target="/shop/women" />
 			))}
 			{/* Oh So Major Brands */}
 			{/* <BigBanner
@@ -181,8 +181,8 @@ export const Home = () => {
 			/> */}
 			<TextBanner title="Oh-So-Major Brands" />
 			<Flex>
-				<OffersBanner images={ohSoMajorBrands.men} target="/men" />
-				<OffersBanner images={ohSoMajorBrands.women} target="/women" />
+				<OffersBanner images={ohSoMajorBrands.men} target="/shop/men" />
+				<OffersBanner images={ohSoMajorBrands.women} target="/shop/women" />
 			</Flex>
 			{/* Shop by category */}
 			<TextBanner title="categories to bag" />

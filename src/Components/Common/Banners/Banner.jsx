@@ -21,7 +21,7 @@ export const Banner = ({ image, target = "/men" }) => {
 	);
 };
 
-export const OffersBanner = ({ images = [], target = "/men" }) => {
+export const OffersBanner = ({ images = [], target = "/shop/men" }) => {
 	return (
 		<Flex direction="row" justifyContent="space-evenly">
 			{images?.map((image, index) => (

@@ -22,15 +22,15 @@ import { SearchBar } from "./SearchBar/SearchBar";
 export const menuItems = [
 	{
 		title: "Men",
-		path: "/men",
+		path: "men",
 	},
 	{
 		title: "women",
-		path: "/women",
+		path: "women",
 	},
 	{
 		title: "kids",
-		path: "/kids",
+		path: "kids",
 	},
 	{
 		title: "home & living",
@@ -76,7 +76,7 @@ export const Navbar = () => {
 					flexWrap="wrap"
 					className="navbar-menu">
 					{menuItems?.map(({ title, path }) => (
-						<NavMenuItem key={title} path={path}>
+						<NavMenuItem key={title} path={`shop/${path}`}>
 							{title}
 						</NavMenuItem>
 					))}
